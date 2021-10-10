@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+body{
+    background-color: #8abb18;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.stopka{     
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    
+    display:none;
+    height:50px;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    right:0 3rem;
+    background:linear-gradient(90deg, rgba(180, 247, 24, 1) 48%, rgb(152, 235, 19) 100%);
+    display:flex;
+    justify-content:center;
+    
+}
+.stopka p
+{
+  
+    margin: 0 1rem;
+    text-decoration:none;
+    padding:1rem .5rem;
+}
+
+
+main
+{
+    padding-top: 75px;
+}
+
+.not{
+    padding-top: 75px;
+}
+
+
+.wstep
+{
+text-align: center;
+}
+
+
+header
+{
+    background-color:#ABEB3D;
+    box-shadow: 1px 1px 4px rgba(30, 94, 0, 0.1);
+    position: fixed;
+    margin-top:0;
+    padding-top:0;
+    margin-left:0;
+    width: 100%;
+    z-index: 3;
+    }
+    
+
+
+    header ul
+    {
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ABEB3D;
+    }
+    
+    header li a
+    {
+    display: block;
+    align-items:center;
+    justify-content:center;
+    padding: 5px;
+    text-decoration: none;
+    /*border-right: 1px solid #f4f4f4;*/
+    }
+    
+    header li a:hover,header.menu-btm:hover 
+    {
+    background-color:#A2DE3A;
+    }
+    
+    header .menu
+    {
+    clear: both;
+    max-height: 0;
+    transition: max-height s easy-out;
+    -webkit-transition: max-height 1s easy-out;
+    -moz-transition: max-height 1s easy-out;
+    }
+    
+    header .menu-icon
+    {
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+    position: relative;
+    }
+    
+    header .menu-icon .navicon
+    {
+    background-color: #000;
+    display: block;
+    height: 2px;
+    width: 15px;
+    position: relative;
+    }
+    
+    header .menu-icon .navicon::before, header .menu-icon .navicon::after
+    {
+    content: "";
+    background-color: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 2s;
+    }
+    
+    header .menu-icon .navicon::before
+    {
+    top: 5px;
+    }
+    
+    header .menu-icon .navicon::after
+    {
+    top: -5px;
+    }
+    
+    header .menu-btm
+    {
+    display: none;
+    }
+    
+    header .menu-btm:checked~.menu
+    {
+    max-height: 175px;
+    }
+    
+    header .menu-btm:checked~.menu-icon .navicon::before
+    {
+    transform: rotate(45deg) translateY(-7px);
+    }
+    
+    header .menu-btm:checked~.menu-icon .navicon::after
+    {
+    transform: rotate(-45deg) translateY(7px);
+    }
+    
+    header .menu-btm:checked~.menu-icon .navicon
+    {
+    background-color: transparent;
+    }
