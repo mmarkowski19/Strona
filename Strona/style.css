@@ -12,15 +12,16 @@ main
 {
     padding-top: 6%;
 }
-
+/* 
 .not
 {
-    padding-top: 75px;
-}
+    padding-top: 3%;
+} */
 
 .formularz
 {
     padding-top: 3%;
+    background-color: #A8E31E;
 }
 
 
@@ -166,8 +167,9 @@ header
         margin-left: auto; 
         margin-right: auto;
         border: 3px solid #000000;
+        border-radius: 25px;
         width: 50%;
-        background-color: #A8E31E;
+        background-color: #A8E31E;       
     }
 
 
@@ -189,6 +191,12 @@ header
      width:100%;
      justify-content:center;
      text-align: center;
+     border: 3px solid #000000;
+     margin-left: auto; 
+     margin-right: auto;
+     width: 50%;
+     border-radius: 25px;
+     background-color: #A8E31E;
     }
 
     .Kosciolzdj
@@ -234,6 +242,7 @@ header
         margin-left: auto; 
         margin-right: auto;
         border: 3px solid #000000;
+        border-radius: 25px 25px 5px 5px; 
         width: 50%;
         background-color: #A8E31E;
     }
@@ -244,6 +253,49 @@ header
     }
     
 
+    .galeria{
+
+        margin-left: auto; 
+        margin-right: auto;
+
+    }
+
+    .galleria-w {
+        box-sizing: border-box;
+        height: 225px;
+        overflow: hidden;
+      }
+      
+      .galleria-suwak {
+        box-sizing: border-box;
+        height: 225px;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      
+      .gal {
+        background-color: #A8E31E;
+        display: flex;
+        box-sizing: border-box;
+        width: max-content;
+        height: 210px;
+        padding: 0px 8px;
+      }
+      
+      .zdj {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 16px 8px;
+        
+      }
+      
+      .zdj img {
+        display: block; 
+        height: 100%;
+      }
+
+
+
 
 
     .Teatr
@@ -252,8 +304,10 @@ header
         margin-left: auto; 
         margin-right: auto;
         border: 3px solid #000000;
+        border-radius: 25px;
         width: 50%;
         background-color: #A8E31E;
+        
     }
 
     .teatrtekst
@@ -267,6 +321,7 @@ header
         margin-left: auto; 
         margin-right: auto;
         border: 3px solid #000000;
+        border-radius: 25px;
         width: 50%;
         background-color: #A8E31E;
     }
@@ -302,7 +357,7 @@ header
     display:none;
     height:100;
     width:100%;
-    position: flex;
+    position: fixed;
     bottom:0;
     right:0 3rem;
     background:linear-gradient(90deg, rgba(180, 247, 24, 1) 48%, rgb(152, 235, 19) 100%);
@@ -317,3 +372,11 @@ header
     text-decoration:none;
     padding:1rem .5rem;
 }
+
+
+.stopka a
+{
+    margin: 0 1rem;
+    padding:1rem .5rem;
+}
+
